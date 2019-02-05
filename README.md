@@ -1,1 +1,1 @@
-# Pi controlled car monitor/heater control
+# Pi controlled car monitor & heater control
