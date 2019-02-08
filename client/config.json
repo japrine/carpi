@@ -1,3 +1,6 @@
 {
-  "car": "1"
+  "car": "1",
+  "int_temp": "0",
+  "ext_temp": "1",
+  "cool_temp": "2"
 }
