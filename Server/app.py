@@ -42,7 +42,7 @@ class Car(db.Model):
         self.check_in = check_in
 
 
-# Product Schema
+# Car Schema
 class CarSchema(ma.Schema):
     class Meta:
         fields = ('id', 'name', 'state', 'status', 'int_temp', 'ext_temp', 'cool_temp', 'voltage', 'check_in')
@@ -80,7 +80,7 @@ def add_product(id):
         car.check_in = check_in
         db.session.commit()
 
-    return car_schema.jsonify(car)
+    return jsonify(car.state)
 
 
 # Run Server
