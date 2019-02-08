@@ -56,7 +56,6 @@ car_schema = CarSchema(strict=True)
 def add_product(id):
     car = Car.query.get(id)
 
-    print(car)
     status = request.json['status']
     int_temp = request.json['int_temp']
     ext_temp = request.json['ext_temp']
@@ -65,13 +64,13 @@ def add_product(id):
     check_in = datetime.datetime.now()
 
     if not car:
-        print('Create Car')
         state = False
         car = Car('Car', state, status, int_temp, ext_temp, cool_temp, voltage, check_in)
         db.session.add(car)
         db.session.commit()
+        print('Create Car', car)
     else:
-        print('Update Car')
+        print('Update Car', car)
         car.status = status
         car.int_temp = int_temp
         car.ext_temp = ext_temp
