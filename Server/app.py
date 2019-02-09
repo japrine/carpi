@@ -1,3 +1,19 @@
+"""
+Todo:
+Add users to database so cars can be grouped and viewed together.
+Add email alerts - low voltage alarm email would be useful
+
+Web Todo:
+Add login/pass or just pass for safer pub
+Add sensor feedback page with buttons to turn heaters on
+Add setting page to change timer settings
+Add schedule page for automatic turn on
+
+Done:
+json api for getting sensor data from cars and responding with data
+Automatically adds new cars to database when they connect for the first time
+"""
+
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow

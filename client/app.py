@@ -1,3 +1,26 @@
+"""
+Todo:
+Implement Timer - Use a default time set by server, add setting to config file for saving
+Add pushbutton input for manual timer on
+Add code for ADC so we can get battery voltage (MCP4725 is cheap 1chan)
+    Or use ADS1115 4 chan for bat voltage and heater ok on fan output sense.
+Add GPS code to return location data (if adding data shield and not tethering)
+
+Partially Done:
+Test temp sensors (code for ds18b20 1wire sensors mostly done)
+
+Non-code related Todo:
+Decide if using network/gps shield or phone tethering and test
+Get PowerBoost 1000C for battery/UPS to prevent reset when starting car or D/C battery
+Get Temp sensors to test
+Get a ADC and build voltage divider circuit(s) and test
+
+Done:
+json api using requests library, sends sensor data and receives settings as response
+Uses config.json for saving settings (car ID, temp sensor order IDs)
+"""
+
+
 import requests
 import json
 import sched
