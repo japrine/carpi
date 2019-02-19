@@ -68,6 +68,7 @@ class CarSchema(ma.Schema):
 car_schema = CarSchema(strict=True)
 
 
+# --== Route for JSON API to cars ==--
 @app.route('/car/<id>', methods=['POST'])
 def add_product(id):
     car = Car.query.get(id)
