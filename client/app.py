@@ -1,7 +1,7 @@
 """
 Todo:
 Implement Timer - Use a default time set by server, add setting to config file for saving
-Add pushbutton input for manual timer on
+Add pushbutton input for manual timer on **
 Add code for ADC so we can get battery voltage (MCP4725 is cheap 1chan)
     Or use ADS1115 4 chan for bat voltage and heater ok on fan output sense.
 Add GPS code to return location data (if adding data shield and not tethering)
