@@ -16,8 +16,10 @@ Get Temp sensors to test
 Get a ADC and build voltage divider circuit(s) and test
 
 Done:
-json api using requests library, sends sensor data and receives settings as response
+json api using requests library
+Sends data once a minute and receives settings as response
 Uses config.json for saving settings (car ID, temp sensor order IDs)
+Added DS18b20 Sensor code (untested)
 """
 
 
